@@ -94,7 +94,9 @@
     Here is a list of some of the keywords you will learn about in this tutorial:
 
     Keyword         Description
+    
     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
     var	            Declares a variable
     let	            Declares a block variable
     const	        Declares a block constant
@@ -104,7 +106,27 @@
     function	    Declares a function
     return	        Exits a function
     try	            Implements error handling to a block of statements
-    
-✅
-✅
-✅
+
+🛑 JS Syntax
+
+✅ JavaScript Identifiers / Names
+✅ JavaScript is Case Sensitive
+✅ JavaScript and Camel Case
+
+🛑 JS Comments
+
+✅ //
+✅ /* */
+
+🛑 JS Variables
+
+✅ 4 Ways to Declare a JavaScript Variable:
+
+    var
+    let
+    const
+    Using nothing
+
+✅ 
+
+
