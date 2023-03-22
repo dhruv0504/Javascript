@@ -1,1 +1,68 @@
-🛑 Javascript 
+🛑 Javascript Introduction
+
+✅ JavaScript Can Change HTML Content
+    One of many JavaScript HTML methods is getElementById().
+
+    The example below "finds" an HTML element (with id="demo"), and changes the element content (innerHTML) to "Hello JavaScript":
+
+    Example:
+
+    document.getElementById("demo").innerHTML = "Hello JavaScript";
+
+✅ JavaScript Can Change HTML Attribute Values
+
+✅ JavaScript Can Change HTML Styles (CSS).
+
+✅ JavaScript Can Hide HTML Elements
+
+    Hiding HTML elements can be done by changing the display style:
+
+    Example
+    document.getElementById("demo").style.display = "none";
+
+✅ JavaScript Can Show HTML Elements
+
+    Showing hidden HTML elements can also be done by changing the display style:
+
+    Example
+    document.getElementById("demo").style.display = "block";
+
+🛑 Where to
+
+1. <script>
+2. <head>/<body>
+3. extrenal file
+
+    JavaScript files have the file extension .js.
+    
+    Example:
+    <script src="myScript.js"></script>
+
+✅ JavaScript Functions and Events
+
+    A JavaScript function is a block of JavaScript code, that can be executed when "called" for.
+
+🛑 Output
+
+✅ JavaScript Display Possibilities
+
+    JavaScript can "display" data in different ways:
+
+    1.Writing into an HTML element, using innerHTML.
+    2.Writing into the HTML output using document.write().
+    3.Writing into an alert box, using window.alert().
+    4.Writing into the browser console, using console.log() 
+
+✅ Using document.write() after an HTML document is loaded, will delete all existing HTML
+
+✅ The document.write() method should only be used for testing.
+
+✅ For debugging purposes, you can call the console.log() method in the browser to display data. 
+
+✅ 
+✅
+✅
+✅
+✅
+✅
+✅
