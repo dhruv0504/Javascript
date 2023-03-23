@@ -357,3 +357,19 @@
     trim()
     trimEnd()
 
+✅ padStart() and padEnd() to support padding at the beginning and at the end of a string
+
+    Example:
+
+        padStart(4,"0")
+        padEnd(4,"0")
+
+✅ Extracting String Characters
+
+    There are 3 methods for extracting string characters:
+
+        charAt(position)
+        charCodeAt(position) : The charCodeAt() method returns the unicode of the character at a specified index in a string
+        Property access [ ]
+
+✅
