@@ -127,6 +127,233 @@
     const
     Using nothing
 
-✅ 
+🛑 JS Let
 
+✅ Variables defined with let can not be redeclared.
+
+✅ These two keywords provide Block Scope in JavaScript.
+
+    Variables declared inside a { } block cannot be accessed from outside the block:
+
+    Example:
+
+        {
+        let x = 2;
+        }
+        // x can NOT be used here
+
+✅ Let Hoisting
+
+    Variables defined with var are hoisted to the top and can be initialized at any time.
+
+    Meaning: You can use the variable before it is declared:
+
+    Example
+
+        carName = "Volvo";
+        var carName;
+
+🛑 JS Const
+
+✅ Block Scope
+
+    Declaring a variable with const is similar to let when it comes to Block Scope.
+
+    The x declared in the block, in this example, is not the same as the x declared outside the block:
+
+    Example
+
+        const x = 10;
+        // Here x is 10
+
+        {
+        const x = 2;
+        // Here x is 2
+        }
+
+        // Here x is 10
+
+🛑 JS Operator
+
+✅ Arithmatic + - * / %  ** -- ++  
+✅ Assignment = += -= *= /= %= **=
+✅ Comparison == === != !== > <  >= <= ?
+✅ Logical && || !
+✅ Type typeof instanceof
+✅ Bitwise & | ~ ^ << >> >>>
+
+🛑 JS Arithmatic
+
+🛑 JS Assignment
+
+🛑 JS Data Types
+
+✅ JavaScript has 8 Datatypes
+
+    1. String
+    2. Number
+    3. Bigint
+    4. Boolean
+    5. Undefined
+    6. Null
+    7. Symbol
+    8. Object
+
+✅ The Object Datatype
+
+    The object data type can contain:
+
+    1. An object
+    2. An array
+    3. A date
+
+🛑 JS Functions
+
+✅ A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().
+
+    Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).
+
+    The parentheses may include parameter names separated by commas:
+        
+                (parameter1, parameter2, ...)
+
+    The code to be executed, by the function, is placed inside curly brackets: {}
+
+                                function name(parameter1, parameter2, parameter3) {
+                                // code to be executed
+                                }
+
+    Function parameters are listed inside the parentheses () in the function definition.
+
+    Function arguments are the values received by the function when it is invoked.
+
+    Inside the function, the arguments (the parameters) behave as local variables.
+
+🛑 JS Objects
+
+✅ Real Life Objects, Properties, and Methods:
+
+    In real life, a car is an object.
+
+    A car has properties like weight and color, and methods like start and stop
+
+    All cars have the same properties, but the property values differ from car to car.
+
+    All cars have the same methods, but the methods are performed at different times.
+
+    Example:
+
+                                const person = {
+                                firstName: "John",
+                                lastName: "Doe",
+                                age: 50,
+                                eyeColor: "blue"
+                                };
+
+✅  const person = {
+        firstName: "John",
+        lastName : "Doe",
+        id       : 5566,
+        fullName : function() {
+            return this.firstName + " " + this.lastName;
+        }
+        };
+
+✅  What is this?
+
+    In JavaScript, the this keyword refers to an object.
+
+    Which object depends on how this is being invoked (used or called).
+
+    The this keyword refers to different objects depending on how it is used:
+
+        In an object method, this refers to the object.
+        Alone, this refers to the global object.
+        In a function, this refers to the global object.
+        In a function, in strict mode, this is undefined.
+        In an event, this refers to the element that received the event.
+        Methods like call(), apply(), and bind() can refer this to any object.
+        Note
+        this is not a variable. It is a keyword. You cannot change the value of this.
+
+🛑 JS Events
+
+✅ Example:
+                    <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+
+✅ Common HTML Events
+        
+    Here is a list of some common HTML events:
+
+        Event	            Description
+        +---------------------------------------------------------------------+
+        
+        onchange	        An HTML element has been changed
+        onclick	            The user clicks an HTML element
+        onmouseover	        The user moves the mouse over an HTML element
+        onmouseout	        The user moves the mouse away from an HTML element
+        onkeydown	        The user pushes a keyboard key
+        onload	            The browser has finished loading the page
+
+🛑 JS Strings
+
+✅ To find the length of a string, use the built-in length property 
+
+✅ Escape Character
+
+    Because strings must be written within quotes, JavaScript will misunderstand this string:
+
+    The backslash (\) escape character turns special characters into string characters:
+
+    Code	    Result	        Description
+    ------------------------------------------
+
+    \'	        '	            Single quote
+    \"	        "	            Double quote
+    \\	        \	            Backslash
+
+✅ Six other escape sequences are valid in JavaScript:
+
+    Code	    Result
+    -------------------------------
+
+    \b	        Backspace
+    \f	        Form Feed
+    \n	        New Line
+    \r	        Carriage Return
+    \t	        Horizontal Tabulator
+    \v	        Vertical Tabulator
+
+✅ Comparing two JavaScript objects always returns false.
+
+🛑 JS Strings Methods
+
+✅      String length
+        String slice()
+        String substring()
+        String substr()
+        String replace()
+        String replaceAll()
+        String toUpperCase()
+        String toLowerCase()
+        String concat()
+        String trim()
+        String trimStart()
+        String trimEnd()
+        String padStart()
+        String padEnd()
+        String charAt()
+        String charCodeAt()
+        String split()
+
+✅      slice(start, end)
+        substring(start, end)
+        substr(start, length)
+        replace("Microsoft", "W3Schools")
+
+✅ The trim() method removes whitespace from both sides of a string
+
+    trimStart()
+    trim()
+    trimEnd()
 
