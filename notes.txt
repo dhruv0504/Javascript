@@ -438,12 +438,217 @@
 
     The Number.isSafeInteger() method returns true if the argument is a safe integer.
 
-✅ 
+🛑 JS Number Properties
+
 ✅
+
+Property	            Description
++----------------------------------------------------------------------------------------+
+EPSILON	                The difference between 1 and the smallest number > 1.
+MAX_VALUE	            The largest number possible in JavaScript
+MIN_VALUE	            The smallest number possible in JavaScript
+MAX_SAFE_INTEGER	    The maximum safe integer (253 - 1)
+MIN_SAFE_INTEGER	    The minimum safe integer -(253 - 1)
+POSITIVE_INFINITY	    Infinity (returned on overflow)
+NEGATIVE_INFINITY	    Negative infinity (returned on overflow)
+NaN	                    A "Not-a-Number" value
+
+🛑 JS Arrays
+
+✅ An array is a special variable, which can hold more than one value:
+
+            const cars = ["Saab", "Volvo", "BMW"];
+
+✅ It is a common practice to declare arrays with the const keyword.
+
+✅ const cars = new Array("Saab", "Volvo", "BMW");
+
+✅ Array Methods
+
+    1. length
+    2. sort
+
+✅ The Difference Between Arrays and Objects
+
+            In JavaScript, arrays use numbered indexes.  
+
+            In JavaScript, objects use named indexes.
+
+✅ Array.isArray()
+
+✅ instanceof
+
+🛑 JavaScript Array Methods
+
+✅ The JavaScript method toString() converts an array to a string of (comma separated) array values.
+
+✅ pop()
+
+✅ push()
+
+✅ The shift() method removes the first array element and "shifts" all other elements to a lower index.
+
+✅ The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements
+
+    The unshift() method returns the new array length
+
+✅ Using delete leaves undefined holes in the array.
+
+✅ The concat() method creates a new array by merging (concatenating) existing arrays
+
+    The concat() method can also take strings as arguments
+
+✅ Flattening an array is the process of reducing the dimensionality of an array.
+
+    The flat() method creates a new array with sub-array elements concatenated to a specified depth.
+
+✅ The splice() method adds new items to an array.
+
+    The slice() method slices out a piece of an array.
+
+✅ The splice() method can be used to add new items to an array:
+
+            Example:
+
+            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+            fruits.splice(2, 0, "Lemon", "Kiwi");
+        
+                            The first parameter (2) defines the position where new elements should be added (spliced in).
+
+                            The second parameter (0) defines how many elements should be removed.
+
+                            The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added.
+
+                            The splice() method returns an array with the deleted items.
+
+🛑 JS Array Sort
+
+✅ The sort() method sorts an array alphabetically 
+
+✅ The reverse() method reverses the elements in an array.
+
+🛑 JS Array Iteration   
+
+✅ The forEach() method calls a function (a callback function) once for each array element.
+
+✅ JavaScript Array map()
+
+        The map() method creates a new array by performing a function on each array element.
+
+        The map() method does not execute the function for array elements without values.
+
+        The map() method does not change the original array.
+
+✅ JavaScript Array flatMap()
+
+        ES2019 added the Array flatMap() method to JavaScript.
+
+        The flatMap() method first maps all elements of an array and then creates a new array by flattening the array.
+
+        Example:
+
+            const myArr = [1, 2, 3, 4, 5, 6];
+            const newArr = myArr.flatMap((x) => x * 2);
+
+✅ The filter() method creates a new array with array elements that pass a test.
+
+✅ JavaScript Array reduce()
+
+        The reduce() method runs a function on each array element to produce (reduce it to) a single value.
+
+        The reduce() method works from left-to-right in the array. See also reduceRight().
+
+        The reduce() method does not reduce the original array.
+
+        This example finds the sum of all numbers in an array:
+
+        Example:
+
+                    const numbers = [45, 4, 9, 16, 25];
+                    let sum = numbers.reduce(myFunction);
+
+                    function myFunction(total, value, index, array) {
+                    return total + value;
+                    }
+
+✅ JavaScript Array every()
+    
+    The every() method checks if all array values pass a test.
+
+✅ JavaScript Array some()
+
+    The some() method checks if some array values pass a test.
+
+    This example checks if some array values are larger than 18
+
+✅ JavaScript Array indexOf()
+
+    The indexOf() method searches an array for an element value and returns its position.
+
+    array.indexOf(item, start)
+
+✅ The find() method returns the value of the first array element that passes a test function.
+
+✅ The findIndex() method returns the index of the first array element that passes a test function.
+
+✅ The Array.keys() method returns an Array Iterator object with the keys of an array.
+
+✅ The entries() method returns an Array Iterator object with key/value pairs:
+
+        [0, "Banana"]
+        [1, "Orange"]
+        [2, "Apple"]
+        [3, "Mango"]
+
+        The entries() method does not change the original array.
+
+✅ Array.includes() to arrays. This allows us to check if an element is present in an array (including NaN, unlike indexOf).
+
+🛑 JS Array Const   
+
+✅ An array declared with const cannot be reassigned
+
+🛑 JS Date
+
+✅ There are 9 ways to create a new date object:
+
+    new Date()
+    new Date(date string)
+
+    new Date(year,month)
+    new Date(year,month,day)
+    new Date(year,month,day,hours)
+    new Date(year,month,day,hours,minutes)
+    new Date(year,month,day,hours,minutes,seconds)
+    new Date(year,month,day,hours,minutes,seconds,ms)
+
+    new Date(milliseconds)
+
+🛑 JS Date Formats
+
+
+🛑 JS Date Methods
+
+✅  Method	                               Description
+    +-------------------------------------------------------------------------------+
+    getFullYear()	            Get year as a four digit number (yyyy)
+    getMonth()	                Get month as a number (0-11)
+    getDate()	                Get day as a number (1-31)
+    getDay()	                Get weekday as a number (0-6)
+    getHours()	                Get hour (0-23)
+    getMinutes()	            Get minute (0-59)
+    getSeconds()	            Get second (0-59)
+    getMilliseconds()	        Get millisecond (0-999)
+    getTime()	                Get time (milliseconds since January 1, 1970)
+
 ✅
+
 ✅
+
 ✅
+
 ✅
+
 ✅
+
 ✅
-✅ 
