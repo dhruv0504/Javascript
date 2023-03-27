@@ -774,9 +774,37 @@ NaN	                    A "Not-a-Number" value
 
 🛑 JS Break
 
+✅ The break statement "jumps out" of a loop.
+
+✅ The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+
+🛑 JS Iterables
+
+✅  Iterables are iterable objects (like Arrays).
+
+    Iterables can be accessed with simple and efficient code.
+
+    Iterables can be iterated over with for..of loops
+
+🛑 JS Set
+
 ✅
+
+    Method	            Description
+
+    +-------------------------------------------------------------------------------------+
+    new Set()	        Creates a new Set
+    add()	            Adds a new element to the Set
+    delete()	        Removes an element from a Set
+    has()	            Returns true if a value exists in the Set
+    forEach()	        Invokes a callback for each element in the Set
+    values()	        Returns an iterator with all the values in a Set
+
 ✅
-✅
-✅
+    Property	        Description
+    +---------------------------------------------------------------------+
+    size	            Returns the number of elements in a Set
+
+
 ✅
 ✅
