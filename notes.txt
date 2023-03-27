@@ -740,3 +740,43 @@ NaN	                    A "Not-a-Number" value
     }
 
 🛑 JS Loop For
+
+    for (let i = 0; i < 5; i++) {
+        text += "The number is " + i + "<br>";
+    }
+
+🛑 JS For In
+
+✅  for (key in object) {
+            // code block to be executed
+    }
+
+✅ The forEach() method calls a function (a callback function) once for each array element.
+
+🛑 JS For Of
+
+✅ The JavaScript for of statement loops through the values of an iterable object.
+
+✅          for (variable of iterable) {
+                // code block to be executed
+            }
+
+🛑 JS Loop While
+
+✅ while (condition) {
+    // code block to be executed
+    }
+
+✅ do {
+    // code block to be executed
+    }
+    while (condition);
+
+🛑 JS Break
+
+✅
+✅
+✅
+✅
+✅
+✅
