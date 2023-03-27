@@ -789,7 +789,6 @@ NaN	                    A "Not-a-Number" value
 🛑 JS Set
 
 ✅
-
     Method	            Description
 
     +-------------------------------------------------------------------------------------+
@@ -805,6 +804,38 @@ NaN	                    A "Not-a-Number" value
     +---------------------------------------------------------------------+
     size	            Returns the number of elements in a Set
 
+🛑 JS Maps
+
+✅  Method                  Description
+    +-------------------------------------------------------------------------------------+
+    new Map()	            Creates a new Map
+    set()	                Sets the value for a key in a Map
+    get()	                Gets the value for a key in a Map
+    delete()	            Removes a Map element specified by the key
+    has()	                Returns true if a key exists in a Map
+    forEach()	            Calls a function for each key/value pair in a Map
+    entries()	            Returns an iterator with the [key, value] pairs in a Map
+    
+✅    
+    Property	            Description
+    +--------------------------------------------------------------------+
+    size	                Returns the number of elements in a Map
+
+🛑 JS typeof
+
+🛑 JS Type Conversion
 
 ✅
+    Method	                    Description
+    +-------------------------------------------------------------------------+
+    
+    Number()	                Returns a number, converted from its argument
+    parseFloat()	            Parses a string and returns a floating point number
+    parseInt()	                Parses a string and returns an integer
+    toExponential()	            Returns a string, with a number rounded and written using exponential notation.
+    toFixed()	                Returns a string, with a number rounded and written with a specified number of decimals.
+    toPrecision()	            Returns a string, with a number written with a specified length
+
 ✅
+
+-
