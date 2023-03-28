@@ -1098,6 +1098,8 @@ NaN	                    A "Not-a-Number" value
     enumerable : true    // Property can be enumerated
     configurable : true  // Property can be reconfigured
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 ⭕ JS Functions
 
 🛑 Func Definition
@@ -1183,6 +1185,9 @@ NaN	                    A "Not-a-Number" value
 
     Global variables can be made local (private) with closures.
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 ⭕ JS Classes
 
 🛑 Class Intro
@@ -1233,3 +1238,83 @@ NaN	                    A "Not-a-Number" value
 
 ✅ You cannot call a static method on an object, only on an object class.
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+⭕ JS Async
+
+🛑 JS Calllbacks
+
+✅ Using a callback, you could call the calculator function (myCalculator) with a callback (myCallback), 
+    and let the calculator function run the callback after the calculation is finished
+
+✅  The examples above are not very exciting.
+
+    They are simplified to teach you the callback syntax.
+
+    Where callbacks really shine are in asynchronous functions, where one function has to wait for another function (like waiting for a file to load). 
+
+🛑 JS Asynchronous
+
+✅ When using the JavaScript function setTimeout(), you can specify a callback function to be executed on time-out
+
+✅ For displaying time:
+
+    setInterval(myFunction, 1000);
+
+    function myFunction() {
+        let d = new Date();
+        document.getElementById("demo").innerHTML=
+        d.getHours() + ":" +
+        d.getMinutes() + ":" +
+        d.getSeconds();
+    }
+
+🛑 JS Promises
+
+⭐ Doubts
+
+🛑 JS Async/Await
+
+✅ The keyword async before a function makes the function return a promise
+
+✅ The await keyword can only be used inside an async function.
+
+    The await keyword makes the function pause the execution and wait for a resolved promise before it continues
+
+                let value = await promise;
+
+✅ 
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+⭕ JS HTML DOM
+
+🛑 DOM Intro
+
+✅ When a web page is loaded, the browser creates a Document Object Model of the page.
+
+✅ The HTML DOM is a standard object model and programming interface for HTML. It defines:
+
+    The HTML elements as objects
+    The properties of all HTML elements
+    The methods to access all HTML elements
+    The events for all HTML elements
+
+🛑 DOM Methods
+
+✅  HTML DOM methods are actions you can perform (on HTML Elements).
+
+    HTML DOM properties are values (of HTML Elements) that you can set or change.
+
+✅ getElementById method
+
+✅ innerHTML ppt
+
+✅
+
+🛑
+✅
+✅
+✅
+✅
