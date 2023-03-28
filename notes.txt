@@ -1309,11 +1309,105 @@ NaN	                    A "Not-a-Number" value
 
 ✅ getElementById method
 
-✅ innerHTML ppt
+✅ innerHTML property
 
-✅
+🛑 DOM Documents
 
-🛑
+✅ Finding HTML Elements
+
+    Method	                                            Description
+    +--------------------------------------------------------------------------------------+
+    document.getElementById(id)	                        Find an element by element id
+    document.getElementsByTagName(name)	                Find elements by tag name
+    document.getElementsByClassName(name)	            Find elements by class name
+
+✅ Changing HTML Elements
+
+    Property	                                        Description
+    +-------------------------------------------------------------------------------------------------+
+    element.innerHTML =  new html content	            Change the inner HTML of an element
+    element.attribute = new value	                    Change the attribute value of an HTML element
+    element.style.property = new style	                Change the style of an HTML element
+
+    Method	                                            Description
+    +----------------------------------------------------------------------------------------------------+
+    element.setAttribute(attribute, value)	            Change the attribute value of an HTML element
+
+✅ Adding and Deleting Elements
+
+    Method	                                    Description
+    +-------------------------------------------------------------------------------+
+    document.createElement(element)	            Create an HTML element
+    document.removeChild(element)	            Remove an HTML element
+    document.appendChild(element)	            Add an HTML element
+    document.replaceChild(new, old)	            Replace an HTML element
+    document.write(text)	                    Write into the HTML output stream
+
+✅ Adding Events Handlers
+
+    Method	                                                                    Description
+    +--------------------------------------------------------------------------------------------------------------------------+
+    document.getElementById(id).onclick = function(){code}	                    Adding event handler code to an onclick event
+
+🛑 DOM Elements
+
+✅ getElementById("intro")
+
+✅ getElementsByTagName("p")
+
+✅ getElementsByClassName("intro")
+
+✅ const x = document.querySelectorAll("p.intro");
+
+🛑 DOM HTML
+
+✅ Changing HTML Content
+
+    Ex:
+
+    document.getElementById(id).innerHTML = new HTML
+
+✅ Changing the Value of an Attribute
+
+    Ex:
+
+    document.getElementById(id).attribute = new value
+
+✅ document.write() can be used to write directly to the HTML output stream
+
+🛑 DOM Forms
+
+✅ HTML form validation can be done by JavaScript.
+
+✅ Data Validation
+
+    Data validation is the process of ensuring that user input is clean, correct, and useful.
+
+✅ Constraint Validation HTML Input Attributes
+
+    Attribute	                                                Description
+    +----------------------------------------------------------------------------------------------------------+
+    disabled	                                    Specifies that the input element should be disabled
+    max	                                            Specifies the maximum value of an input element
+    min	                                            Specifies the minimum value of an input element
+    pattern	                                        Specifies the value pattern of an input element
+    required	                                    Specifies that the input field requires an element
+    type 	                                        Specifies the type of an input element
+
+✅ Constraint Validation CSS Pseudo Selectors
+
+    Selector	    Description
+    +----------------------------------------------------------------------------+
+    :disabled	    Selects input elements with the "disabled" attribute specified
+    :invalid	    Selects input elements with invalid values
+    :optional	    Selects input elements with no "required" attribute specified
+    :required	    Selects input elements with the "required" attribute specified
+    :valid	        Selects input elements with valid value
+
+🛑 DOM CSS
+
+✅ document.getElementById(id).style.property = new style
+
 ✅
 ✅
 ✅
