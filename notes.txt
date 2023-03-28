@@ -1545,12 +1545,69 @@ NaN	                    A "Not-a-Number" value
     navigator.appCodeName
     navigator.platform
 
-✅
+🛑 JS Popup Alert
 
-🛑
-🛑
-🛑
-🛑
-🛑
-🛑
-🛑
+✅ An alert box is often used if you want to make sure information comes through to the user.
+
+    When an alert box pops up, the user will have to click "OK" to proceed.
+
+                    window.alert("sometext");
+
+✅ A confirm box is often used if you want the user to verify or accept something.
+
+                window.confirm("sometext");
+
+                example:
+
+                if (confirm("Press a button!")) {
+                txt = "You pressed OK!";
+                } else {
+                txt = "You pressed Cancel!";
+                }
+
+✅ A prompt box is often used if you want the user to input a value before entering a page.
+
+            window.prompt("sometext","defaultText");
+
+            Example:
+                        let person = prompt("Please enter your name", "Harry Potter");
+                        let text;
+                        if (person == null || person == "") {
+                        text = "User cancelled the prompt.";
+                        } else {
+                        text = "Hello " + person + "! How are you today?";
+                        }
+
+✅ To display line breaks inside a popup box, use a back-slash followed by the character n.
+
+🛑 JS Timing
+
+✅ setTimeout(function, milliseconds)
+
+    Executes a function, after waiting a specified number of milliseconds.
+
+✅ setInterval(function, milliseconds)
+
+    Same as setTimeout(), but repeats the execution of the function continuously.
+
+✅ The clearTimeout() method stops the execution of the function specified in setTimeout().
+
+    Example:
+
+    <button onclick="myVar = setTimeout(myFunction, 3000)">Try it</button>
+
+    <button onclick="clearTimeout(myVar)">Stop it</button>
+
+🛑 JS Cookies
+
+✅ JavaScript can create, read, and delete cookies with the document.cookie property.
+
+✅ document.cookie will return all cookies in one string much like: cookie1=value; cookie2=value; cookie3=value;
+
+✅ setCookie("username", username, 365);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+⭕ JS Web APIs
+
+🛑🛑🛑🛑🛑🛑
