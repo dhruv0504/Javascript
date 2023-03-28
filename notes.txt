@@ -1102,7 +1102,47 @@ NaN	                    A "Not-a-Number" value
 
 🛑 Func Definition
 
+✅  function functionName(parameters) {
+        // code to be executed
+    }
+
+✅ const x = function (a, b) {return a * b};
+
+✅ const myFunction = new Function("a", "b", "return a * b");
+    
+    let x = myFunction(4, 3);
+
+✅ A self-invoking expression is invoked (started) automatically, without being called.
+
+    Function expressions will execute automatically if the expression is followed by ().
+
+    You cannot self-invoke a function declaration.
+
+    You have to add parentheses around the function to indicate that it is a function expression:
+
+        Example:
+
+                (function () {
+                let x = "Hello!!";  // I will invoke myself
+                })();
+
 🛑 Func Parameters
+
+✅ The rest parameter (...) allows a function to treat an indefinite number of arguments as an array
+
+✅ x = findMax(1, 123, 500, 115, 44, 88);
+
+    function findMax() {
+    let max = -Infinity;
+        for (let i = 0; i < arguments.length; i++) 
+        {
+            if (arguments[i] > max) 
+            {
+                max = arguments[i];
+            }
+        }
+        return max;
+    } 
 
 🛑 Func Invocation
 🛑 Func Call
