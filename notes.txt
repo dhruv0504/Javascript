@@ -1012,29 +1012,101 @@ NaN	                    A "Not-a-Number" value
 
 🛑 Object Iterables:
 
-✅  
+✅ The Symbol.iterator is a function that returns a next() function.
+
+✅ The iterator protocol defines how to produce a sequence of values from an object.
+
+✅ An object becomes an iterator when it implements a next() method.
+
+✅ The next() method must return an object with two properties:
+
+                    value (the next value)
+                    done (true or false)
+
+🛑 Object Sets:
+
+✅ The entries() Method:
+
+    A Set has no keys.
+
+    entries() returns [value,value] pairs instead of [key,value] pairs. 
+
+🛑 Object Maps:
+
+✅ A Map holds key-value pairs where the keys can be any datatype.
+
+✅ A Map remembers the original insertion order of the keys.
+
+✅ A Map has a property that represents the size of the map. 
+
+✅ const fruits = new Map();
+
+✅ The get() method gets the value of a key in a Map
+
+🛑 Object Reference
 
 ✅
 
-✅
+    // Create object with an existing object as prototype
+    Object.create()
 
-✅
+    // Adding or changing an object property
+    Object.defineProperty(object, property, descriptor)
 
-✅
+    // Adding or changing object properties
+    Object.defineProperties(object, descriptors)
 
-✅
+    // Accessing Properties
+    Object.getOwnPropertyDescriptor(object, property)
 
-✅
+    // Returns all properties as an array
+    Object.getOwnPropertyNames(object)
 
-🛑
-🛑
-🛑
+    // Accessing the prototype
+    Object.getPrototypeOf(object)
 
-🛑
+    // Returns enumerable properties as an array
+    Object.keys(object)
 
-🛑
-🛑
-🛑
-🛑
-🛑
+✅ 
+
+    // Prevents adding properties to an object
+    Object.preventExtensions(object)
+
+    // Returns true if properties can be added to an object
+    Object.isExtensible(object)
+
+    // Prevents changes of object properties (not values)
+    Object.seal(object)
+
+    // Returns true if object is sealed
+    Object.isSealed(object)
+
+    // Prevents any changes to an object
+    Object.freeze(object)
+
+    // Returns true if object is frozen
+    Object.isFrozen(object)
+
+✅ For changing the value
+
+    Object.defineProperty(object, property, {value : value})
+
+✅ For changing meta data
+
+    writable : true      // Property value can be changed
+    enumerable : true    // Property can be enumerated
+    configurable : true  // Property can be reconfigured
+
+⭕ JS Functions
+
+🛑 Func Definition
+
+🛑 Func Parameters
+
+🛑 Func Invocation
+🛑 Func Call
+🛑 Func Apply
+🛑 Func Bind
+🛑 Func Closures
 
