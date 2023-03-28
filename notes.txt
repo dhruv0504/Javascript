@@ -836,6 +836,76 @@ NaN	                    A "Not-a-Number" value
     toFixed()	                Returns a string, with a number rounded and written with a specified number of decimals.
     toPrecision()	            Returns a string, with a number written with a specified length
 
-✅
+🛑 JS Bitwise
 
--
+✅
+    Operator	        Name	                            Description
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+    &	                AND	                                Sets each bit to 1 if both bits are 1
+    |	                OR	                                Sets each bit to 1 if one of two bits is 1
+    ^	                XOR	                                Sets each bit to 1 if only one of two bits is 1
+    ~	                NOT	                                Inverts all the bits
+    <<	                Zero fill left shift	            Shifts left by pushing zeros in from the right and let the leftmost bits fall off
+    >>	                Signed right shift	                Shifts right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off
+    >>>	                Zero fill right shift	            Shifts right by pushing zeros in from the left, and let the rightmost bits fall off
+
+🛑 JS RegExp
+
+🛑 JS Precedence
+
+🛑 JS Error
+
+✅  try {
+            adddlert("Welcome guest!");
+    }
+    catch(err) {
+            document.getElementById("demo").innerHTML = err.message;
+    }
+
+✅  throw "Too big";
+
+✅ 
+    try {
+    Block of code to try
+    }
+    catch(err) {
+    Block of code to handle errors
+    }
+    finally {
+    Block of code to be executed regardless of the try / catch result
+    }
+
+🛑 JS Scope
+
+🛑 JS Hoisting
+
+🛑 JS Strict Mode
+
+🛑 JS this Keyword
+
+🛑 JS Arrow Function
+
+✅  let myFunction = (a, b) => a * b;
+
+✅  hello = () => {
+        return "Hello World!";
+    }
+
+✅  hello = () => "Hello World!";   
+    
+✅  hello = (val) => "Hello " + val;
+
+
+
+🛑 JS Class
+
+✅  class ClassName {
+        constructor() { ... }
+        method_1() { ... }
+        method_2() { ... }
+        method_3() { ... }
+    }
+
+
+
