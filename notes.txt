@@ -1433,10 +1433,61 @@ NaN	                    A "Not-a-Number" value
 
 🛑 DOM Navigation
 
-✅
+✅  parentNode
+    childNodes[nodenumber]
+    firstChild
+    lastChild
+    nextSibling
+    previousSibling
 
-✅
+✅  document.body - The body of the document
+    document.documentElement - The full document
 
-✅
+✅ The nodeName property specifies the name of a node.
 
-✅
+        nodeName is read-only
+        nodeName of an element node is the same as the tag name
+        nodeName of an attribute node is the attribute name
+        nodeName of a text node is always #text
+        nodeName of the document node is always #document
+
+✅ The nodeValue property specifies the value of a node.
+
+        nodeValue for element nodes is null
+        nodeValue for text nodes is the text itself
+        nodeValue for attribute nodes is the attribute value
+
+🛑 DOM Nodes
+
+✅ To add a new element to the HTML DOM, you must create the element (element node) first, and then append it to an existing element.
+
+✅ const para = document.createElement("p");
+    const node = document.createTextNode("This is new.");
+    para.appendChild(node);
+
+✅ remove()
+
+✅ replaceChild()
+
+🛑 DOM Collections
+
+✅ The getElementsByTagName() method returns an HTMLCollection object.
+
+        const myCollection = document.getElementsByTagName("p");
+
+✅ The length property defines the number of elements in an HTMLCollection
+
+🛑 DOM Node Lists
+
+✅ A NodeList object is a list (collection) of nodes extracted from a document.
+
+            const myNodeList = document.querySelectorAll("p");
+
+✅ The length property defines the number of nodes in a node list
+
+                const myNodelist = document.querySelectorAll("p");
+                for (let i = 0; i < myNodelist.length; i++) {
+                myNodelist[i].style.color = "red";
+                }
+
+✅ 
