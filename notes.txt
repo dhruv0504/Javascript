@@ -1410,7 +1410,33 @@ NaN	                    A "Not-a-Number" value
 
 🛑 DOM Animation
 
-✅  
+🛑 DOM Event
+
+✅ A JavaScript can be executed when an event occurs, like when a user clicks on an HTML element.
+
+✅ The onload and onunload events are triggered when the user enters or leaves the page.
+    The onload event can be used to check the visitor's browser type and browser version, and load the proper version of the web page based on the information.
+
+✅ The onchange event is often used in combination with validation of input fields.
+
+✅ onmouseover,onmouseout,onmousedown, onmouseup, and onclick
+
+🛑 DOM Event Listener
+
+✅ document.getElementById("myBtn").addEventListener("click", displayDate);
+
+✅ removeEventListener()
+
+✅ element.addEventListener(event, function, useCapture);
+
+✅ element.removeEventListener("mousemove", myFunction);
+
+🛑 DOM Navigation
+
 ✅
+
 ✅
+
+✅
+
 ✅
