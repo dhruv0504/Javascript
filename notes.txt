@@ -1004,7 +1004,15 @@ NaN	                    A "Not-a-Number" value
 
 ✅ The JavaScript prototype property also allows you to add new methods to objects constructors
 
-✅ 
+    Example:
+
+    Person.prototype.name = function() {
+        return this.firstName + " " + this.lastName;
+    };
+
+🛑 Object Iterables:
+
+✅  
 
 ✅
 
