@@ -1145,8 +1145,91 @@ NaN	                    A "Not-a-Number" value
     } 
 
 🛑 Func Invocation
+
+✅ It is common to use the term "call a function" instead of "invoke a function".
+
 🛑 Func Call
+
+✅ With the call() method, you can write a method that can be used on different objects.
+
 🛑 Func Apply
+
+✅ The call() method takes arguments separately.
+
+    The apply() method takes arguments as an array. 
+
 🛑 Func Bind
+
+✅ With the bind() method, an object can borrow a method from another object.
+
+✅ const person = {
+        firstName:"John",
+        lastName: "Doe",
+        fullName: function () {
+            return this.firstName + " " + this.lastName;
+        }
+    }
+
+    const member = {
+    firstName:"Hege",
+    lastName: "Nilsen",
+    }
+
+    let fullName = person.fullName.bind(member);
+
 🛑 Func Closures
+
+✅ JavaScript variables can belong to the local or global scope.
+
+    Global variables can be made local (private) with closures.
+
+⭕ JS Classes
+
+🛑 Class Intro
+
+✅ class ClassName {
+        constructor() { ... }
+    }
+
+✅ class ClassName {
+        constructor() { ... }
+        
+        method_1() { ... }
+        method_2() { ... }
+        method_3() { ... }
+    }
+
+🛑 Class Inheritance
+
+✅ To create a class inheritance, use the extends keyword.
+
+✅ A class created with a class inheritance inherits all the methods from another class
+
+✅ class Car {
+        constructor(brand) {
+            this.carname = brand;
+        }
+        present() {
+            return 'I have a ' + this.carname;
+        }
+    }
+
+    class Model extends Car {
+        constructor(brand, mod) {
+            super(brand);
+            this.model = mod;
+        }
+        show() {
+            return this.present() + ', it is a ' + this.model;
+        }
+    }
+
+    let myCar = new Model("Ford", "Mustang");
+    document.getElementById("demo").innerHTML = myCar.show();
+
+🛑 Class Static
+
+✅ Static class methods are defined on the class itself.
+
+✅ You cannot call a static method on an object, only on an object class.
 
