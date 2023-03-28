@@ -1,3 +1,5 @@
+⭕ JS Tutorials
+
 🛑 Javascript Introduction
 
 ✅ JavaScript Can Change HTML Content
@@ -907,5 +909,124 @@ NaN	                    A "Not-a-Number" value
         method_3() { ... }
     }
 
+🛑 JS JSON
 
+✅  "employees":[
+        {"firstName":"John", "lastName":"Doe"},
+        {"firstName":"Anna", "lastName":"Smith"},
+        {"firstName":"Peter", "lastName":"Jones"}
+    ]
+
+🛑 JS Debugging
+
+🛑 JS Style Guide
+
+🛑 JS Best Practices
+
+🛑 JS Mistakes
+
+🛑 JS Performance
+
+✅ Reduce DOM Access
+        
+        Accessing the HTML DOM is very slow, compared to other JavaScript statements.
+
+        If you expect to access a DOM element several times, access it once, and use it as a local variable:
+
+                                Example:
+
+                                const obj = document.getElementById("demo");
+                                obj.innerHTML = "Hello";
+
+🛑 JS Reserved Words
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+⭕ JS Versions
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+⭕ JS Objects
+
+🛑 Object Definition
+
+✅ Methods are actions that can be performed on objects.
+
+✅ The named values, in JavaScript objects, are called properties.
+
+🛑 Object Ppt:
+
+✅  objectName.property  
+    objectName["property"] 
+    objectName[expression]   
+
+✅ delete person.age; // for deleting
+
+✅ person.nationality = "English"; // to add properties
+
+🛑 Object Methods:
+
+✅ const person = {
+        firstName: "John",
+        lastName: "Doe",
+        id: 5566,
+        fullName: function() {
+            return this.firstName + " " + this.lastName;
+        }
+    };
+
+🛑 Object Display:
+
+✅ Object.values(person);
+
+✅ JSON.stringify(person)
+    
+    O/p: {"name":"John","age":30,"city":"New York"}
+
+✅ JSON.stringify will not stringify functions
+
+🛑 Object Accessors:
+
+✅ Object.defineProperty(obj, "reset", {
+        get : function () {this.counter = 0;}
+    });
+
+🛑 Object Constructor:
+
+✅ function Person(first, last, age, eye) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eye;
+    } 
+
+🛑 Object Prototype:
+
+✅ The JavaScript prototype property also allows you to add new methods to objects constructors
+
+✅ 
+
+✅
+
+✅
+
+✅
+
+✅
+
+✅
+
+✅
+
+🛑
+🛑
+🛑
+
+🛑
+
+🛑
+🛑
+🛑
+🛑
+🛑
 
