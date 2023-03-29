@@ -21,14 +21,14 @@
 
     Hiding HTML elements can be done by changing the display style:
 
-    Example
+    Example:
     document.getElementById("demo").style.display = "none";
 
 ✅ JavaScript Can Show HTML Elements
 
     Showing hidden HTML elements can also be done by changing the display style:
 
-    Example
+    Example:
     document.getElementById("demo").style.display = "block";
 
 🛑 Where to write
@@ -74,7 +74,7 @@
     Add a semicolon at the end of each executable statement:
 
     Examples:
-    
+
     let a, b, c;  // Declare 3 variables
     a = 5;        // Assign the value 5 to a
     b = 6;        // Assign the value 6 to b
@@ -86,7 +86,7 @@
 
     If a JavaScript statement does not fit on one line, the best place to break it is after an operator:
 
-    Example
+    Example:
     document.getElementById("demo").innerHTML =
     "Hello Dolly!";
 
@@ -153,7 +153,7 @@
 
     Meaning: You can use the variable before it is declared:
 
-    Example
+    Example:
 
         carName = "Volvo";
         var carName;
@@ -166,7 +166,7 @@
 
     The x declared in the block, in this example, is not the same as the x declared outside the block:
 
-    Example
+    Example:
 
         const x = 10;
         // Here x is 10
