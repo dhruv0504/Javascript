@@ -379,7 +379,7 @@
 🛑 JS Strings Search
 
 ✅ JavaScript Search Methods
-                                
+
                     String indexOf() : The indexOf() method returns the index of (position of) the first occurrence of a string in a string
                     String lastIndexOf() : The lastIndexOf() method returns the index of the last occurrence of a specified text in a string
                     String search() : The search() method searches a string for a string (or a regular expression) and returns the position of the match
@@ -393,7 +393,7 @@
 
 ✅ ${ans}
 
-🛑 JS Numbers
+🛑 JS Numbers   
 
 ✅ JavaScript has only one type of number. Numbers can be written with or without decimals.
 
