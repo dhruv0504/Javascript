@@ -1928,10 +1928,117 @@ NaN	                    A "Not-a-Number" value
 
     myObj.cars[0];
 
-✅ 
-
 🛑 Server
+
+✅  A common use of JSON is to exchange data to/from a web server.
+
+    When receiving data from a web server, the data is always a string.
+
+    Parse the data with JSON.parse(), and the data becomes a JavaScript object.
+
+✅ const xmlhttp = new XMLHttpRequest();
+
+    xmlhttp.onload = function() {
+        const myObj = JSON.parse(this.responseText);
+        document.getElementById("demo").innerHTML = myObj.name;
+    };
+
+    xmlhttp.open("GET", "json_demo.txt");
+    xmlhttp.send();
+
 🛑 PHP
+
+✅ PHP has some built-in functions to handle JSON.
+
+✅ Objects in PHP can be converted into JSON by using the PHP function json_encode()
+
+    PHP File:
+
+    <?php
+    $myObj->name = "John";
+    $myObj->age = 30;
+    $myObj->city = "New York";
+
+    $myJSON = json_encode($myObj);
+
+    echo $myJSON;
+    ?>
+
+✅ Arrays in PHP will also be converted into JSON when using the PHP function json_encode()
+
+    Example:
+
+    <?php
+    $myArr = array("John", "Mary", "Peter", "Sally");
+
+    $myJSON = json_encode($myArr);
+
+    echo $myJSON;
+    ?>
+
+✅ PHP is a server side programming language, and can be used to access a database.
+
+✅  Convert the request into an object, using the PHP function json_decode().
+    Access the database, and fill an array with the requested data. 
+    Add the array to an object, and return the object as JSON using the json_encode() function.
+
 🛑 HTML
+
+✅ JavaScript can be used to make HTML in your web pages.
+
+✅ Dynamic Table
+
+✅ Drop Down
+
 🛑 JSONP
  
+✅ JSONP is a method for sending JSON data without worrying about cross-domain issues.
+
+    JSONP does not use the XMLHttpRequest object.
+
+    JSONP uses the <script> tag instead.
+
+✅ JSONP stands for JSON with Padding.
+
+⭕ JS vs jQuery
+
+🛑 jQuery Selector
+
+✅ myElement = $("#id01"); 
+
+✅ myElements = $("p");
+
+✅ myElements = $(".intro");
+
+✅ myElements = $("p.intro");
+
+🛑 jQuery HTML
+
+✅ myElement.text("Hello Sweden!");
+
+✅ myText = $("#02").text();
+
+✅ myElement.html("<p>Hello World</p>");
+
+✅ content = myElement.html();
+
+🛑 jQuery CSS
+
+✅ myElement.hide();
+
+✅ myElement.show();
+
+✅ $("#demo").css("font-size","35px");
+
+🛑 jQuery DOM
+
+✅
+
+✅
+✅
+✅
+✅
+
+
+
+
