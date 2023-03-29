@@ -1921,18 +1921,65 @@ open(method, url, async)	        Specifies the type of request
 send()	                            Sends the request to the server (used for GET)
 send(string)	                    Sends the request to the server (used for POST)
 
-✅
+✅ By sending asynchronously, the JavaScript does not have to wait for the server response, but can instead:
 
-✅
+        execute other scripts while waiting for server response
+        deal with the response after the response is ready
 
+✅ GET or POST?
 
-🛑
-🛑
-🛑
-🛑
-🛑
-🛑
-🛑
+    GET is simpler and faster than POST, and can be used in most cases.
+
+    However, always use POST requests when:
+
+            A cached file is not an option (update a file or database on the server).
+            Sending a large amount of data to the server (POST has no size limitations).
+            Sending user input (which can contain unknown characters), POST is more robust and secure than GET.
+
+🛑 AJAX Response
+
+✅      Property	               Description
+        +------------------------------------------------------------+
+        responseText	        get the response data as a string
+        responseXML	            get the response data as XML data
+
+✅ Server Response Methods
+
+    Method	                    Description
+    +--------------------------------------------------------------------------------------+
+    getResponseHeader()	        Returns specific header information from the server resource
+    getAllResponseHeaders()	    Returns all the header information from the server resource
+
+🛑 AJAX XML File
+
+✅  AJAX can be used for interactive communication with an XML file.
+
+✅  
+        <script>
+            function loadDoc() {
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function() {
+                    myFunction(this);
+                }
+                xhttp.open("GET", "cd_catalog.xml");
+                xhttp.send();
+            }
+
+            function myFunction(xml) {
+                const xmlDoc = xml.responseXML;
+                const x = xmlDoc.getElementsByTagName("CD");
+                let table="<tr><th>Artist</th><th>Title</th></tr>";
+                for (let i = 0; i <x.length; i++) { 
+                    table += "<tr><td>" +
+                    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+                    "</td></tr>";
+                }
+                document.getElementById("demo").innerHTML = table;
+            }
+        </script>
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ⭕ JS JSON
 
