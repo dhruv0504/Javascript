@@ -1810,6 +1810,8 @@ NaN	                    A "Not-a-Number" value
 ✅  watchPosition() - Returns the current position of the user and continues to return updated position as the user moves (like the GPS in a car).
     clearWatch() - Stops the watchPosition() method.
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 ⭕ JS JSON
 
 🛑 Intro
@@ -2000,6 +2002,8 @@ NaN	                    A "Not-a-Number" value
 
 ✅ JSONP stands for JSON with Padding.
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 ⭕ JS vs jQuery
 
 🛑 jQuery Selector
@@ -2032,12 +2036,9 @@ NaN	                    A "Not-a-Number" value
 
 🛑 jQuery DOM
 
-✅
+✅ $("#id02").remove();
 
-✅
-✅
-✅
-✅
+✅myParent = $("#02").parent().prop("nodeName"); ;
 
 
 
