@@ -1907,16 +1907,29 @@ NaN	                    A "Not-a-Number" value
 
 🛑 Stringify
 
-✅
-
-✅
-
-✅
-
-✅
+✅ Convert a JavaScript object into a string with JSON.stringify().
 
 🛑 Objects
+
+✅ You can access object values by using dot (.) notation: 
+
+        x = myObj.name;
+        x = myObj["name"];
+
 🛑 Arrays
+
+✅ This is a JSON string:
+    '["Ford", "BMW", "Fiat"]'
+
+    Inside the JSON string there is a JSON array literal:
+    ["Ford", "BMW", "Fiat"]
+
+✅ Access in array
+
+    myObj.cars[0];
+
+✅ 
+
 🛑 Server
 🛑 PHP
 🛑 HTML
