@@ -1610,9 +1610,210 @@ NaN	                    A "Not-a-Number" value
 
 ⭕ JS Web APIs
 
+🛑 Web API Intro
+
+✅ A Web API is a developer's dream.
+
+            It can extend the functionality of the browser
+            It can greatly simplify complex functions
+            It can provide easy syntax to complex code
+
+✅ API stands for Application Programming Interface.
+
+    A Web API is an application programming interface for the Web.
+
+    A Browser API can extend the functionality of a web browser.
+
+    A Server API can extend the functionality of a web server.
+
+✅ Third Party APIs
+
+    Third party APIs are not built into your browser.
+
+    To use these APIs, you will have to download the code from the Web.
+
+                Examples:
+
+                YouTube API - Allows you to display videos on a web site.
+                Twitter API - Allows you to display Tweets on a web site.
+                Facebook API - Allows you to display Facebook info on a web site.
+
+🛑 Web Form API
+
+✅ Constraint Validation DOM Properties
+    
+    Property	                            Description
+    +-----------------------------------------------------------------------------------------------+
+    validity	                            Contains boolean properties related to the validity of an input element.
+    validationMessage	                    Contains the message a browser will display when the validity is false.
+    willValidate	                        Indicates if an input element will be validated. 
+
+✅ Validity Properties
+
+    Property	                    Description
+    +------------------------------------------------------------------------------------------------------------+
+    customError	                    Set to true, if a custom validity message is set.
+    patternMismatch	                Set to true, if an element's value does not match its pattern attribute.
+    rangeOverflow	                Set to true, if an element's value is greater than its max attribute.
+    rangeUnderflow	                Set to true, if an element's value is less than its min attribute.
+    stepMismatch	                Set to true, if an element's value is invalid per its step attribute.
+    tooLong	                        Set to true, if an element's value exceeds its maxLength attribute.
+    typeMismatch	                Set to true, if an element's value is invalid per its type attribute.
+    valueMissing	                Set to true, if an element (with a required attribute) has no value.
+    valid	                        Set to true, if an element's value is valid.
+
+🛑 Web History API
+
+✅ The back() method loads the previous URL in the windows.history list.
+
+✅ The go() method loads a specific URL from the history list.
+
+✅ History Object Properties
+
+    Property	        Description
+    +------------------------------------------------------------------+
+    length	            Returns the number of URLs in the history list
+
+✅ History Object Methods
+
+    Method	            Description
+    +----------------------------------------------------+
+    back()	            Loads the previous URL in the history list
+    forward()	        Loads the next URL in the history list
+    go()	            Loads a specific URL from the history list
+
+🛑 Web Storage API
+
+✅ The Web Storage API is a simple syntax for storing and retrieving data in the browser. It is very easy to use:
+
+        Example:
+
+        localStorage.setItem("name", "John Doe");
+        localStorage.getItem("name");
+
+✅ The localStorage Object
+
+        The localStorage object provides access to a local storage for a particular Web Site. It allows you to store, read, add, modify, and delete data items for that domain.
+
+        The data is stored with no expiration date, and will not be deleted when the browser is closed.
+
+        The data will be available for days, weeks, and years.
+
+✅ The localStorage.setItem() method stores a data item in a storage.
+
+✅ The localStorage.getItem() method retrieves a data item from the storage.
+
+✅ The sessionStorage Object
+
+    The sessionStorage object is identical to the localStorage object.
+
+    The difference is that the sessionStorage object stores data for one session.
+
+    The data is deleted when the browser is closed.
+
+                    Example
+                    sessionStorage.getItem("name");
+
+✅ Storage Object Properties and Methods
+
+    Property/Method	                        Description
+    +------------------------------------------------------------------------------------------------------------------+
+    key(n)	                                Returns the name of the nth key in the storage
+    length	                                Returns the number of data items stored in the Storage object
+    getItem(keyname)	                    Returns the value of the specified key name
+    setItem(keyname, value)	                Adds a key to the storage, or updates a key value (if it already exists)
+    removeItem(keyname)	                    Removes that key from the storage
+    clear()	                                Empty all key out of the storage
+
+✅ Related Pages for Web Storage API
+
+    Property	                    Description
+    +-------------------------------------------------------------------------------------------------------------------+
+    window.localStorage	            Allows to save key/value pairs in a web browser. Stores the data with no expiration date
+    window.sessionStorage	        Allows to save key/value pairs in a web browser. Stores the data for one session                    
+
+🛑 Web Worker API
+
+✅ When executing scripts in an HTML page, the page becomes unresponsive until the script is finished.
+
+    A web worker is a JavaScript that runs in the background, independently of other scripts, without affecting the performance of the page. 
+    
+    You can continue to do whatever you want: clicking, selecting things, etc., while the web worker runs in the background.
+
+⭐ Steps:
+
+    ✅ Check Web Worker Support
+
+            if (typeof(Worker) !== "undefined") {
+            // Yes! Web worker support!
+            // Some code.....
+            } else {
+            // Sorry! No Web Worker support..
+            }
+
+    ✅ Create a Web Worker File
+
+            let i = 0;
+
+            function timedCount() {
+            i ++;
+            postMessage(i);
+            setTimeout("timedCount()",500);
+            }
+
+            timedCount();
+
+    ✅ Create a Web Worker Object
+
+        w.onmessage = function(event){
+            document.getElementById("result").innerHTML = event.data;
+        };
+
+    ✅ Terminate a Web Worker
+
+            w.terminate();
+
+    ✅  Reuse the Web Worker
+
+🛑 Web Fetch API
+
+✅ The Fetch API interface allows web browser to make HTTP requests to web servers.
+
+✅  async function getText(file) {
+        let myObject = await fetch(file);
+        let myText = await myObject.text();
+        myDisplay(myText);
+    }
+
+🛑 Web Geolocation API
+
+✅ The HTML Geolocation API is used to get the geographical position of a user.
+
+✅ Geolocation is most accurate for devices with GPS, like smartphones.
+
+✅ The getCurrentPosition() method is used to return the user's position.
+
+    The getCurrentPosition() method returns an object on success. The latitude, longitude and accuracy properties are always returned.
+
+
+    Property	                Returns
+    +--------------------------------------------------------------------------------------------------------+
+    coords.latitude	            The latitude as a decimal number (always returned)
+    coords.longitude	        The longitude as a decimal number (always returned)
+    coords.accuracy	            The accuracy of position (always returned)
+    coords.altitude	            The altitude in meters above the mean sea level (returned if available)
+    coords.altitudeAccuracy	    The altitude accuracy of position (returned if available)
+    coords.heading	            The heading as degrees clockwise from North (returned if available)
+    coords.speed	            The speed in meters per second (returned if available)
+    timestamp	                The date/time of the response (returned if available)
+
+✅  watchPosition() - Returns the current position of the user and continues to return updated position as the user moves (like the GPS in a car).
+    clearWatch() - Stops the watchPosition() method.
+
+⭕ JS JSON
+
 🛑
 🛑
 🛑
 🛑
-🛑
-🛑
+ 
