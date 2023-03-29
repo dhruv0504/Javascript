@@ -1879,9 +1879,42 @@ NaN	                    A "Not-a-Number" value
     The MIME type for JSON text is "application/json"
 
 🛑 JSON vs XML
+
+✅ Both JSON and XML can be used to receive data from a web server.
+
+✅  ✔ JSON doesn't use end tag
+    ✔ JSON is shorter
+    ✔ JSON is quicker to read and write
+    ✔ JSON can use arrays
+    ✔ The biggest difference is:
+
+    ✔ XML has to be parsed with an XML parser. JSON can be parsed by a standard JavaScript function.
+
 🛑 Data Types
+
+✅ a string
+    a number
+    an object (JSON object)
+    an array
+    a boolean
+    null
+
 🛑 Parse
+
+✅ Parse the data with JSON.parse(), and the data becomes a JavaScript object. 
+
+✅ You should avoid using functions in JSON, the functions will lose their scope, and you would have to use eval() to convert them back into functions 
+
 🛑 Stringify
+
+✅
+
+✅
+
+✅
+
+✅
+
 🛑 Objects
 🛑 Arrays
 🛑 Server
