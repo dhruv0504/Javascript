@@ -147,7 +147,7 @@
         }
         // x can NOT be used here
 
-✅ Let Hoisting
+✅ 😎 Let Hoisting
 
     Variables defined with var are hoisted to the top and can be initialized at any time.
 
