@@ -292,7 +292,8 @@
 
         Event	            Description
         +---------------------------------------------------------------------+
-        
+
+
         onchange	        An HTML element has been changed
         onclick	            The user clicks an HTML element
         onmouseover	        The user moves the mouse over an HTML element
@@ -334,6 +335,7 @@
 🛑 JS Strings Methods
 
 ✅      String length
+
         String slice()
         String substring()
         String substr()
@@ -532,7 +534,8 @@ NaN	                    A "Not-a-Number" value
 
 ✅ The reverse() method reverses the elements in an array.
 
-🛑 JS Array Iteration   
+🛑 JS Array 
+   
 
 ✅ The forEach() method calls a function (a callback function) once for each array element.
 
@@ -1320,6 +1323,7 @@ NaN	                    A "Not-a-Number" value
 
     Method	                                            Description
     +--------------------------------------------------------------------------------------+
+    
     document.getElementById(id)	                        Find an element by element id
     document.getElementsByTagName(name)	                Find elements by tag name
     document.getElementsByClassName(name)	            Find elements by class name
